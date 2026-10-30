@@ -35,7 +35,7 @@ const CATEGORIES: { id: string; label: string; items: Item[] }[] = [
 ];
 
 export function MenuSection() {
-  const [active, setActive] = useState(CATEGORIES[0].id);
+  const [active, setActive] = useState("petiscos");
   const cat = CATEGORIES.find((c) => c.id === active)!;
 
   return (
